@@ -30,8 +30,7 @@
      --danger-color: #d70707;
      --secundary-color: #FF5200;
      --border: .1rem solid rgba(0, 0, 0, .2);
-     --home-text-color:#292C4D
-
+     --home-text-color: #292C4D
  }
 
  body {
@@ -46,11 +45,13 @@
      --bg-side-nav-header-color: #1f1f1f;
      --border: .1rem solid rgba(0, 0, 0, .4);
  }
- .text-secundary{
-    color: var(--secundary-color);
+
+ .text-secundary {
+     color: var(--secundary-color);
  }
- .fs-1{
-    font-size: 4rem;
+
+ .fs-1 {
+     font-size: 4rem;
  }
 
  .me-1 {
@@ -60,40 +61,39 @@
  .ms-1 {
      margin-left: .85rem;
  }
+
  .me-icon {
-    margin-right: .3rem;
-}
-.ms-icon {
-    margin-left: .3rem;
-}
+     margin-right: .3rem;
+ }
+
+ .ms-icon {
+     margin-left: .3rem;
+ }
 
 
  /*=======================Section Header (Navbar)==================*/
-
  header {
-     height: var(--nav-height);
-     background-color: var(--bg-nav-color);
      padding: 0 3.5rem;
      position: fixed;
      top: 0;
      left: 0;
-     width: 100%;
      z-index: 1000;
+     width: 100%;
+     height: var(--nav-height);
+     background-color: var(--bg-nav-color);
  }
 
  .navbar {
      display: flex;
      align-items: center;
-     height: 100%;
      width: 100%;
      justify-content: space-between;
+     height: 100%;
+
+
  }
 
- @media (max-width:600px) {
-     header {
-         padding: 0 1.8rem;
-     }
- }
+ @media (max-width:600px) {}
 
  .nav-menu {
      display: flex;
@@ -168,7 +168,7 @@
          align-items: baseline;
      }
 
-      .nav-menu ul li {
+     .nav-menu ul li {
          margin: 1rem 0;
      }
 
@@ -177,10 +177,11 @@
      }
  }
 
- .nav-menu ul li{
-    margin: 0 .75rem;
+ .nav-menu ul li {
+     margin: 0 .75rem;
 
-}
+ }
+
  .nav-menu ul li a {
      position: relative;
      text-align: center;
@@ -233,11 +234,12 @@
          display: none;
      }
  }
+
  @media (max-width:820px) {
-    .logo {
-        display: none;
-    }
-    
+     .logo {
+         display: none;
+     }
+
  }
 
  .span-s {
@@ -315,11 +317,12 @@
      padding: .5rem 1rem;
      border-radius: 7px;
  }
+
  .btn-download-cv:hover {
-    color: var(--white-color);
-    border: 1px solid var(--white-color);
-    background-color: var(--secundary-color);
-}
+     color: var(--white-color);
+     border: 1px solid var(--white-color);
+     background-color: var(--secundary-color);
+ }
 
  @media(max-width:600px) {}
 
@@ -329,66 +332,55 @@
 
  /*=======================Section Home==================*/
 
- .section {
-     padding: 100px 15%;
- }
+
 
  .section-home {
-     background: url(../img/img-back-2.jpg);
-     background-size: cover;
-     background-position: center;
-     margin-top: calc(100vh-(var(--nav-height)));
-     min-height: calc(100vh-(var(--nav-height)));
-     height: 100%;
-     width: 100%;
-     position: relative;
+     background-color: #754334;
      display: flex;
+     padding: 50px 10%;
+     margin-top: var(--nav-height);
+     height: calc(100vh - var(--nav-height));
+     width: 100%;
      align-items: center;
-
  }
 
- @media(max-width:600px) {
-    .section {
-        padding: 100px 30px;
-    }
+ .col-6 {
+     width: 50%;
+     flex: 1 1 auto;
+ }
+
+ @media (max-width:600px) {
      .section-home {
          flex-direction: column-reverse;
+         align-items: baseline;
+         padding-top: 1rem;
      }
  }
 
-
- .home-image img {
-
-     width: 370px;
+ .img-home {
+     width: 400px;
      height: 400px;
-     transform: rotate(-30deg);
  }
 
- @media(max-width:600px) {
-    .home-image {
-        margin: 1rem 0;
-    }
-     .home-image img {
-         width: 300px;
-         height: 300px;
-         transform: rotate(-30deg);
-         
-     }
- }
-
- .home-text h1 {
-     font-size: 5rem;
-     line-height: 1;
-     font-weight: 800;
+ .home-text h1{
+    font-size: 3rem;
      color: var(--home-text-color);
-     margin: 10px 0 25px;
  }
- .home-text h5 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--home-text-color);
-    margin: 10px 0 25px;
-}
+ .home-text h3 {
+     font-size: 3rem;
+     color: var(--home-text-color);
+ }
+ .home-text h5{
+    font-size: 1.5rem;
+     color: var(--home-text-color);
+ }
+ .home-text p{
+    color: var(--primary-color);
+ }
+
+ .solical{
+     margin-top: 20px;
+ }
 
  /*=====================End section Home =========================/*
 
